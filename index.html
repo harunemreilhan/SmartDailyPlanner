@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Daily Planner Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body class="light-mode">
+  <div class="container">
+    <header>
+      <h1>Smart Daily Planner</h1>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn">
+          <span class="light-icon">🌞</span>
+          <span class="dark-icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <div class="quote-container">
+        <div class="quote-box">
+          <p id="quote-text">"The future depends on what you do today."</p>
+          <p id="quote-author">- Mahatma Gandhi</p>
+        </div>
+        <button id="new-quote-btn" title="Roll for a new quote">
+          <div class="dice">🎲</div>
+        </button>
+      </div>
+
+      <div class="planner-section">
+        <h2>Today's Tasks</h2>
+        
+        <form id="task-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="task-input">New Task</label>
+              <input type="text" id="task-input" placeholder="Enter your task" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="task-time">Time</label>
+              <input type="time" id="task-time" required>
+            </div>
+
+            <div class="form-group">
+              <label for="task-hours">Est. Hours</label>
+              <input type="number" id="task-hours" min="0.25" max="24" step="0.25" value="1" required>
+            </div>
+
+            <div class="form-group button-group">
+              <button type="submit" id="add-task-btn">Add Task</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="time-summary">
+          <p>Total estimated time: <span id="total-time">0</span> hours</p>
+        </div>
+
+        <div class="task-list-container">
+          <h3>Pending Tasks</h3>
+          <ul id="task-list"></ul>
+
+          <h3>Completed Tasks</h3>
+          <ul id="completed-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Smart Daily Planner - Group Project</p>
+    <p class="team-members">Team Members: [Your Names Here]</p>
+  </footer>
+
+  <script src="confetti.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
