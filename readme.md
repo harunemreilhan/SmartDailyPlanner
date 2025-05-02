@@ -3,8 +3,12 @@
 
 ## Project Information
 
-- **Project Title:** Smart Daily Planner Dashboard
-- **Team Members:** [Insert 5 Team Member Names Here]
+- **Team Members:**  
+    1. Hasan Sezayi IBISOGLU  
+    2. Harun Emre ILHAN  
+    3. Muhammet Cagri OZATLI  
+    4. Berke CANAYAZ  
+    5. Batin SENYUZ
 
 ## Project Description
 
